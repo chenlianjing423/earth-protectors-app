@@ -7,7 +7,15 @@ import { getFirestore, collection, query, where, onSnapshot, addDoc, setLogLevel
 // --- GLOBAL CONFIGURATION (MANDATORY CANVAS VARIABLES) ---
 // These variables are provided by the hosting environment for Firebase setup and security.
 const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+const firebaseConfig = {
+  apiKey: "AIzaSyDIxU73TgiyhW2ibPhXg12wbFpJ2EG9WqI",
+  authDomain: "earth-protectors-app.firebaseapp.com",
+  projectId: "earth-protectors-app",
+  storageBucket: "earth-protectors-app.firebasestorage.app",
+  messagingSenderId: "834071826015",
+  appId: "1:834071826015:web:58cf97e8515a30aea2d5ea",
+  measurementId: "G-L9J4522HDK"
+};
 const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
 
 // --- MOCK DATA FOR MALAYSIAN REGIONS AND CROPS ---
